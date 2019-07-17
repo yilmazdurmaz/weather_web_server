@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel="icon" href="/img/icon.ico">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  {{>navbar}}
+
+  {{>header}}
+
+  <div class="maincontent">
+    <section>
+      Use the given links above to browse the site
+      <br>
+      Home: Main page
+      <br>
+      Weather: Get the current weather
+      <br>
+      About: See my picture
+      <br>
+      Help: This page
+      <br>
+      <a href="/test">test</a>
+      <a href="/help/test">help test</a>
+    </section>
+
+  </div>
+
+  {{>footer}}
+
+</body>
+
+</html>

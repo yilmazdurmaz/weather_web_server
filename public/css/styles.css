@@ -1,0 +1,66 @@
+body {
+  color: #04767a;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: rgba(230, 228, 210, 0.767);
+  max-width: 640;
+  margin: 0 auto;
+  padding: 0 16px;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+footer {
+  color: rgb(26, 79, 192);
+  border-top: 5px solid rgb(21, 24, 216);
+  margin-top: 16px auto;
+  padding: 16px 0;
+  width:100%
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-top: 5px solid purple;
+  border-bottom: 5px solid purple;
+  width:100%;
+}
+
+h1 {
+  color: rgb(129, 8, 59)
+}
+
+nav{
+  margin-top:16px;
+  align-self: flex-end
+}
+nav a {
+  color: rgb(116, 165, 44);
+  margin-right: 16px;
+  text-decoration: unset;
+}
+
+nav a:hover {
+  color: rgb(150, 150, 31);
+}
+
+.maincontent {
+  flex-grow: 1;
+}
+
+.portrait {
+  width: 100px
+}
+
+input{
+  border: 2px double;
+  padding:4px;
+}
+
+button{
+  cursor: pointer;
+padding:4px;
+border: 2px dotted;
+}

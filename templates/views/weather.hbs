@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel="icon" href="/img/icon.ico">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  {{>navbar}}
+
+  {{>header}}
+
+  <div class="maincontent">
+    <section>
+      <form action="" id="weatherform">
+        <input type="text" name="location" id="locationsearch" placeholder="Location" value="{{weather.location}}">
+        <button>Search</button>
+      </form>
+      Current weather conditions:
+      <br>
+      <span id="errorspan" style="display: none">Error occured</span>
+      <br>
+      Location: <span id="locationspan">{{weather.location}}</span>
+      <br>
+      Forecast: <span id="forecastspan">{{weather.forecast}}</span>
+      <br>
+      <a href="/weather/help">extra help</a>
+      <br>
+      <a href="javascript:defaultSearch('New York')">New York</a>
+      <a href="javascript:defaultSearch('Tokyo')">Tokyo</a>
+      <a href="javascript:defaultSearch('İstanbul')">İstanbul</a>
+      <a href="javascript:defaultSearch('!')">invalid</a>
+
+    </section>
+
+
+  </div>
+
+
+  {{>footer}}
+
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>
